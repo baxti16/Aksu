@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="vendors/img/logo" type="icon">
+    <link rel="stylesheet" href="vendors/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aksu</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="nav__bar">
+                <div class="nav__logo">
+                    <img src="vendors/img/logotip.png" alt="">
+                </div>
+                <div class="nav__inner" id="myDIV">
+                    <a class="nav__link" href="index.html">Asosiy</a>
+                    <a class="nav__link" href="about.html">Biz haqimizda</a>
+                    <a class="nav__link" href="menu.html">Menyu</a>
+                    <a class="nav__link" href="#">Galareya</a>
+                    <a class="nav__link active" href="contact.html">Aloqa</a>
+                </div>
+            </div>
+        </div>
+        <div class="inners">
+            <p class="hero__title">Biz bilan Aloqa</p>
+            <p class="hero__discription">Bizga murojaat qilib savollaringizga javob oling</p>
+            <button class="hero__btn"><a style="text-decoration: none; color: white;" href="index.html">Band
+                    qilish</a></button>
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="sec1__inner">
+            <div class="sec1__left__side">
+                <p class="sec1__left__side__title">Aloqa</p>
+                <div class="sec1__left__side__sm">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <p class="sec1__left__side__sm__first__title">Toshkent shahri Yunusobod tumani
+                        Shota Rustaveli ko’chasi 30-uy</p>
+                </div>
+                <div class="guys">
+                <div>
+                <i class="fa-solid fa-phone icon"></i>
+                </div>
+                <div class="sec1__left__side__sm__numbers">
+                    <p class="sec1__left__side__sm__second__title">+998 99 801 01 02</p>
+                    <p class="sec1__left__side__sm__second__title">+998 99 801 01 02</p>
+                </div>
+                </div>
+                <div class="sec1__left__side__sm">
+                    <i class="fa-light fa-stopwatch icon"></i>
+                    <p class="sec1__left__side__sm__third__title">Dushanba-Shanba: 09:00 - 23:00</p>
+                </div>
+            </div>
+            <div class="sec1__right__side">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25511.815744822736!2d30.815541442684072!3d36.938717614877966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3817257345a43%3A0x5af61e6d2d7df24e!2z0JDQutGB0YMsIEZldHRhaGzEsSwgMDcxMTIgQWtzdS_QkNC90YLQsNC70LjRjywg0KLRg9GA0YbQuNGP!5e0!3m2!1sru!2sde!4v1651233943993!5m2!1sru!2sde"
+                    width="730" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr class="hr">
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="vendors/img/logotip.png" alt="">
+            </div>
+            <div class="footer__middle">
+                <p class="footer__middle__title">Barcha huquqlar himoyalangan</p>
+                <p class="footer__middle__description">@2021 Aksu by chustiy</p>
+            </div>
+            <div class="footer__end">
+                <div class="footer__icons">
+                    <i class="fa-brands fa-telegram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-instagram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-facebook-f icons"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav__link");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

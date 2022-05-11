@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="vendors/img/logo" type="icon">
+    <link rel="stylesheet" href="vendors/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aksu</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="nav__bar">
+                <div class="nav__logo">
+                    <img src="vendors/img/logotip.png" alt="">
+                </div>
+                <div class="nav__inner" id="myDIV">
+                    <a class="nav__link " href="index.html">Asosiy</a>
+                    <a class="nav__link active" href="about.html">Biz haqimizda</a>
+                    <a class="nav__link" href="menu.html">Menyu</a>
+                    <a class="nav__link" href="#">Galareya</a>
+                    <a class="nav__link" href="contact.html">Aloqa</a>
+                </div>
+            </div>
+        </div>
+        <div class="inners">
+            <p class="hero__title">Aksu restorani haqida</p>
+            <p class="hero__discription">Restoranimiz haqida hammasini bilib oling</p>
+            <button class="hero__btn"><a style="text-decoration: none; color: white;" href="index.html">Band
+                    qilish</a></button>
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="sec1__inner">
+            <div class="sec1__left__side">
+                <p class="sec1__title">Restoranimiz haqida</p>
+            </div>
+            <div class="sec1__right__side">
+                <p class="sec1__description">Aksu Shedevr filialimizda o’zingizning yoki farzandlaringizni tug’ilgan
+                    kunini tantanali va esda
+                    qolarli o’tkazish uchun ajoyib imkoniyat!</p>
+                <p class="sec1__description">Aksu restoranlarining barcha filiallari o’zida milliylikni aks etgan
+                    bejirim va chiroyli interyer
+                    dizaynga ega!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="sec2__video">
+            <video width="1220" height="558" controls
+                src="vendors/video/aksu.mp4" type=video/mp4>
+            </video>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="sec3__inner">
+            <div class="sec3__left__side">
+                <img src="vendors/img/aboutlimg.png" alt="">
+            </div>
+            <div class="sec3__right__side">
+                <p class="sec3__right__side__title">Bizning jamoa</p>
+                <p class="sec3__right__side__description">Bizda ko’p yillik tajribaga ega oshpazlar jamoasi ishlashadi.
+                    Dunyodagi eng ko’p oshni tayyorlab
+                    Ginnes rekordlar kitobiga kirgan Baxriddin Chustiy oshpazlar jamosiga boshchilik qiladi.</p>
+                <img src="vendors/img/aboutrimg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr class="hr">
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="vendors/img/logotip.png" alt="">
+            </div>
+            <div class="footer__middle">
+                <p class="footer__middle__title">Barcha huquqlar himoyalangan</p>
+                <p class="footer__middle__description">@2021 Aksu by chustiy</p>
+            </div>
+            <div class="footer__end">
+                <div class="footer__icons">
+                    <i class="fa-brands fa-telegram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-instagram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-facebook-f icons"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav__link");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

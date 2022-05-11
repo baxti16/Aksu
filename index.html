@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="vendors/img/logo" type="icon">
+    <link rel="stylesheet" href="vendors/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aksu</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="nav__bar">
+                <div class="nav__logo">
+                    <img src="vendors/img/logotip.png" alt="">
+                </div>
+                <div class="nav__inner" id="myDIV">
+                    <a class="nav__link active" href="#">Asosiy</a>
+                    <a class="nav__link" href="about.html">Biz haqimizda</a>
+                    <a class="nav__link" href="menu.html">Menyu</a>
+                    <a class="nav__link" href="#">Galareya</a>
+                    <a class="nav__link" href="contact.html">Aloqa</a>
+                </div>
+            </div>
+        </div>
+        <div class="inners">
+            <p class="hero__title">Aksu restorani</p>
+            <p class="hero__discription">Halol milliy va yevropa taomlari</p>
+            <button class="hero__btn"><a style="text-decoration: none; color: white ;" href="#bandqiliw">Band qilish</a></button>
+        </div>
+    </header>
+
+
+    <section class="sec1">
+        <div class="sec1__inner">
+            <div class="sec1__left__side">
+                <img src="vendors/img/sec1-img.png" alt="">
+            </div>
+            <div class="sec1__right__side">
+                <p class="sec1__title">Restoranimiz haqida</p>
+                <p class="sec1__discription">Aksu bu halol milliy va yevropa taomlari restorani
+                    Bizda siz istagan taomingizni topishingiz mumkin. Stolni oldindan band qilish orqali siz uchrashuvni
+                    muvaffaqiyatli va ajoyib o’tkazishingiz mumkin.
+                </p>
+                <button class="sec1__btn"><a style="text-decoration: none; color: white ;" href="about.html">Batafsil</a></button>
+            </div>
+        </div>
+    </section>
+
+    <p class="sec2__title">Menyu</p>
+    <section class="sec2">
+        <div class="smilar" id="myBtnContainer">
+            <button class="btn octive" onclick="filterSelection('meal')"> Go'shtli taomlar</button>
+            <button class="btn" onclick="filterSelection('salat')"> Salatlar</button>
+            <button class="btn" onclick="filterSelection('fast')"> Fast food</button>
+            <button class="btn" onclick="filterSelection('drinks')"> Ichimliklar</button>
+            <button class="btn" onclick="filterSelection('desert')"> Desert</button>
+        </div>
+
+        <div class="container">
+            <div class="filterDiv chuchvara meal">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Chuchvara besh taomi</p>
+                </div>
+            </div>
+            <div class="filterDiv cola drinks">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Coca Cola</p>
+                </div>
+            </div>
+            <div class="filterDiv fanta drinks">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Fanta</p>
+                </div>
+            </div>
+            <div class="filterDiv noxat meal">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">No'xat sho'rak</p>
+                </div>
+            </div>
+            <div class="filterDiv pepsi drinks">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Pepsi</p>
+                </div>
+            </div>
+            <div class="filterDiv olivia salat">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Olivia salati</p>
+                </div>
+            </div>
+            <div class="filterDiv sezer salat">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Sezer salati</p>
+                </div>
+            </div>
+            <div class="filterDiv burger fast">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Burger</p>
+                </div>
+            </div>
+            <div class="filterDiv hotdog fast">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Hot-Dog</p>
+                </div>
+            </div>
+            <div class="filterDiv lavash fast">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Lavash</p>
+                </div>
+            </div>
+            <div class="filterDiv bigburger fast">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Bigburger</p>
+                </div>
+            </div>
+            <div class="filterDiv grecheskiy salat">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Grecheskiy salati</p>
+                </div>
+            </div>
+            <div class="filterDiv choux desert">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Choux torti</p>
+                </div>
+            </div>
+            <div class="filterDiv madonna desert">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Madonna torti</p>
+                </div>
+            </div>
+            <div class="filterDiv adsheron desert">
+                <div class="chuchvara__inner">
+                    <p class="chuchvara__title">Adsheron torti</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="sec2__btn">Barcha menyu</button>
+
+    </section>
+
+
+    <section id="bandqiliw" class="sec3">
+        <p class="sec3__band">Stol band qilish</p>
+        <div class="sec3__inner">
+            <div class="sec3__left__side">
+                <div class="sec3__inputs">
+                    <div class="sec3__inputs__left__side">
+                        <div class="inputs__name__left__side">
+                            <h1 class="inputs__name__title">Ism</h1>
+                        </div>
+                        <div class="inputs__name__right__side">
+                            <input class="inputs__name__input" type="text" placeholder="Ismingizni yozing">
+                        </div>
+                    </div>
+                    <div class="sec3__inputs__left__side">
+                        <div class="inputs__name__left__side">
+                            <h1 class="inputs__name__title">Telefon</h1>
+                        </div>
+                        <div class="inputs__name__right__side">
+                            <input class="inputs__name__input" type="tel" placeholder="+998 (__)-___-__-__">
+                        </div>
+                    </div>
+                </div>
+                <div class="sec3__bottom__dates">
+                    <div>
+                        <div>
+                            <h1 class="sec3__bottom__title">Sana</h1>
+                        </div>
+                        <div>
+                            <input class="sec3__bottom__inputs" type="date">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="sec3__bottom__title">Vaqt</h1>
+                        </div>
+                        <div>
+                            <input class="sec3__bottom__inputs" type="time">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1 class="sec3__bottom__title">Mehmonlar</h1>
+                        </div>
+                        <div>
+                            <input class="sec3__bottom__inputs" type="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="btnsmilar">
+                    <button class="sec3__btn">Band qilish</button>
+                </div>
+            </div>
+            <div class="sec3__right__side">
+                <img class="sec3__right__side__img" src="vendors/img/band.png">
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="vendors/img/logotip.png" alt="">
+            </div>
+            <div class="footer__middle">
+                <p class="footer__middle__title">Barcha huquqlar himoyalangan</p>
+                <p class="footer__middle__description">@2021 Aksu by chustiy</p>
+            </div>
+            <div class="footer__end">
+                <div class="footer__icons">
+                    <i class="fa-brands fa-telegram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-instagram icons"></i>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa-brands fa-facebook-f icons"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav__link");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+
+
+
+        filterSelection("meal")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("octive");
+                current[0].className = current[0].className.replace(" octive", "");
+                this.className += " octive";
+            });
+        }
+    </script>
+</body>
+
+</html>
